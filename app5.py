@@ -58,10 +58,11 @@ app.layout = html.Div(style={'fontFamily': 'Arial, sans-serif', 'margin': '40px'
     ], style={'textAlign': 'center'}),
 
     dcc.Graph(id='sales-graph'),
+
     html.Div([
         "Built by ",
         html.A("Simon Wachira", href="https://simonwachira.com", style={'font-style': 'italic', 'font-weight': '600'})
-    ])
+    ], style={'marginTop': '40px'}) 
 ])
 
 # Define callback to update graph
