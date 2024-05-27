@@ -12,6 +12,7 @@ sales_data['Date'] = pd.to_datetime(sales_data['Date']).dt.date  # Convert to da
 
 # Initialize Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 # Function to get the time of day
 def get_time_of_day():
