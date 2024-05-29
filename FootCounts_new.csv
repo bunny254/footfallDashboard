@@ -146,6 +146,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata CD Outlet,62,88,141.94%,Limuru
 05/25/2024,Bata CD Outlet,0,175,0.00%,Limuru
 05/26/2024,Bata CD Outlet,0,68,0.00%,Limuru
+05/27/2024,Bata CD Outlet,0,98,0.00%,Limuru
+05/28/2024,Bata CD Outlet,0,81,0.00%,Limuru
 01/01/2024,Bata Capital,211,0,0.00%,Nairobi
 01/02/2024,Bata Capital,334,41,12.29%,Nairobi
 01/03/2024,Bata Capital,337,295,87.67%,Nairobi
@@ -292,7 +294,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Capital,258,53,20.54%,Nairobi
 05/24/2024,Bata Capital,275,51,18.55%,Nairobi
 05/25/2024,Bata Capital,389,68,17.50%,Nairobi
-05/26/2024,Bata Capital,460,89,19.37%,Nairobi
+05/26/2024,Bata Capital,472,89,18.86%,Nairobi
+05/27/2024,Bata Capital,271,50,18.48%,Nairobi
+05/28/2024,Bata Capital,205,44,21.46%,Nairobi
 01/02/2024,Bata Galleria Mall,0,179,0.00%,Nairobi
 01/03/2024,Bata Galleria Mall,0,174,0.00%,Nairobi
 01/04/2024,Bata Galleria Mall,0,188,0.00%,Nairobi
@@ -437,7 +441,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Galleria Mall,178,73,41.01%,Nairobi
 05/24/2024,Bata Galleria Mall,218,75,34.48%,Nairobi
 05/25/2024,Bata Galleria Mall,302,103,34.11%,Nairobi
-05/26/2024,Bata Galleria Mall,359,123,34.31%,Nairobi
+05/26/2024,Bata Galleria Mall,360,123,34.21%,Nairobi
+05/27/2024,Bata Galleria Mall,150,65,43.33%,Nairobi
+05/28/2024,Bata Galleria Mall,130,58,44.62%,Nairobi
 01/01/2024,Bata Garden City,576,48,8.33%,Nairobi
 01/02/2024,Bata Garden City,569,63,11.08%,Nairobi
 01/03/2024,Bata Garden City,641,136,21.22%,Nairobi
@@ -585,6 +591,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Garden City,201,31,15.46%,Nairobi
 05/25/2024,Bata Garden City,337,58,17.24%,Nairobi
 05/26/2024,Bata Garden City,605,88,14.56%,Nairobi
+05/27/2024,Bata Garden City,160,39,24.45%,Nairobi
+05/28/2024,Bata Garden City,202,40,19.85%,Nairobi
 01/03/2024,Bata Gateway Mall,0,188,0.00%,Nairobi
 01/04/2024,Bata Gateway Mall,0,240,0.00%,Nairobi
 01/05/2024,Bata Gateway Mall,0,148,0.00%,Nairobi
@@ -725,7 +733,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Gateway Mall,149,38,25.50%,Nairobi
 05/24/2024,Bata Gateway Mall,150,32,21.40%,Nairobi
 05/25/2024,Bata Gateway Mall,229,36,15.75%,Nairobi
-05/26/2024,Bata Gateway Mall,301,55,18.30%,Nairobi
+05/26/2024,Bata Gateway Mall,306,55,17.97%,Nairobi
+05/27/2024,Bata Gateway Mall,167,28,16.77%,Nairobi
+05/28/2024,Bata Gateway Mall,171,37,21.70%,Nairobi
 01/03/2024,Bata Greenspan Mall,0,282,0.00%,Nairobi
 01/04/2024,Bata Greenspan Mall,0,412,0.00%,Nairobi
 01/05/2024,Bata Greenspan Mall,0,300,0.00%,Nairobi
@@ -869,6 +879,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Greenspan Mall,87,49,56.32%,Nairobi
 05/25/2024,Bata Greenspan Mall,116,50,43.10%,Nairobi
 05/26/2024,Bata Greenspan Mall,233,86,36.91%,Nairobi
+05/27/2024,Bata Greenspan Mall,98,42,43.08%,Nairobi
+05/28/2024,Bata Greenspan Mall,74,49,66.22%,Nairobi
 01/01/2024,Bata Hilton,272,0,0.00%,Nairobi
 01/02/2024,Bata Hilton,910,31,3.41%,Nairobi
 01/03/2024,Bata Hilton,1015,352,34.68%,Nairobi
@@ -1012,7 +1024,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Hilton,612,99,16.18%,Nairobi
 05/24/2024,Bata Hilton,625,130,20.82%,Nairobi
 05/25/2024,Bata Hilton,589,125,21.24%,Nairobi
-05/26/2024,Bata Hilton,247,55,22.31%,Nairobi
+05/26/2024,Bata Hilton,248,55,22.22%,Nairobi
+05/27/2024,Bata Hilton,647,110,17.01%,Nairobi
+05/28/2024,Bata Hilton,672,105,15.63%,Nairobi
 01/02/2024,Bata Imaara,0,58,0.00%,Nairobi
 01/03/2024,Bata Imaara,0,74,0.00%,Nairobi
 01/04/2024,Bata Imaara,0,96,0.00%,Nairobi
@@ -1158,7 +1172,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Imaara,90,15,16.67%,Nairobi
 05/24/2024,Bata Imaara,45,9,20.00%,Nairobi
 05/25/2024,Bata Imaara,136,37,27.31%,Nairobi
-05/26/2024,Bata Imaara,108,33,30.56%,Nairobi
+05/26/2024,Bata Imaara,111,33,29.86%,Nairobi
+05/27/2024,Bata Imaara,56,12,21.62%,Nairobi
+05/28/2024,Bata Imaara,52,12,23.08%,Nairobi
 01/01/2024,Bata Jubilee,95,0,0.00%,Nairobi
 01/02/2024,Bata Jubilee,236,37,15.71%,Nairobi
 01/03/2024,Bata Jubilee,298,45,15.13%,Nairobi
@@ -1305,7 +1321,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Jubilee,196,27,13.81%,Nairobi
 05/24/2024,Bata Jubilee,229,37,16.16%,Nairobi
 05/25/2024,Bata Jubilee,236,32,13.59%,Nairobi
-05/26/2024,Bata Jubilee,61,7,11.57%,Nairobi
+05/26/2024,Bata Jubilee,65,7,10.77%,Nairobi
+05/27/2024,Bata Jubilee,197,35,17.77%,Nairobi
+05/28/2024,Bata Jubilee,173,31,17.97%,Nairobi
 01/02/2024,Bata Juja Mall,0,140,0.00%,Juja
 01/03/2024,Bata Juja Mall,0,92,0.00%,Juja
 01/04/2024,Bata Juja Mall,0,122,0.00%,Juja
@@ -1451,6 +1469,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Juja Mall,98,31,31.63%,Juja
 05/25/2024,Bata Juja Mall,157,50,31.95%,Juja
 05/26/2024,Bata Juja Mall,238,53,22.32%,Juja
+05/27/2024,Bata Juja Mall,76,23,30.26%,Juja
+05/28/2024,Bata Juja Mall,97,28,28.87%,Juja
 01/02/2024,Bata Junction Two,0,197,0.00%,Nairobi
 01/03/2024,Bata Junction Two,0,162,0.00%,Nairobi
 01/04/2024,Bata Junction Two,0,196,0.00%,Nairobi
@@ -1592,7 +1612,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Junction Two,94,66,70.21%,Nairobi
 05/24/2024,Bata Junction Two,90,53,58.89%,Nairobi
 05/25/2024,Bata Junction Two,131,101,77.39%,Nairobi
-05/26/2024,Bata Junction Two,123,104,84.55%,Nairobi
+05/26/2024,Bata Junction Two,127,104,82.21%,Nairobi
+05/27/2024,Bata Junction Two,63,38,60.32%,Nairobi
+05/28/2024,Bata Junction Two,54,44,81.48%,Nairobi
 01/02/2024,Bata Karen Hub,0,94,0.00%,Nairobi
 01/03/2024,Bata Karen Hub,0,115,0.00%,Nairobi
 01/04/2024,Bata Karen Hub,0,84,0.00%,Nairobi
@@ -1734,6 +1756,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Karen Hub,225,36,16.04%,Nairobi
 05/25/2024,Bata Karen Hub,314,57,18.15%,Nairobi
 05/26/2024,Bata Karen Hub,631,83,13.16%,Nairobi
+05/27/2024,Bata Karen Hub,209,34,16.31%,Nairobi
+05/28/2024,Bata Karen Hub,180,33,18.33%,Nairobi
 01/02/2024,Bata Kenshoes,0,157,0.00%,Nairobi
 01/03/2024,Bata Kenshoes,0,258,0.00%,Nairobi
 01/04/2024,Bata Kenshoes,0,304,0.00%,Nairobi
@@ -1880,6 +1904,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Kenshoes,234,74,31.62%,Nairobi
 05/25/2024,Bata Kenshoes,238,77,32.35%,Nairobi
 05/26/2024,Bata Kenshoes,127,34,26.88%,Nairobi
+05/27/2024,Bata Kenshoes,201,60,29.93%,Nairobi
+05/28/2024,Bata Kenshoes,248,70,28.28%,Nairobi
 01/01/2024,Bata Kiambu Mall,0,17,0.00%,Kiambu
 01/02/2024,Bata Kiambu Mall,0,58,0.00%,Kiambu
 01/03/2024,Bata Kiambu Mall,0,46,0.00%,Kiambu
@@ -2027,6 +2053,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Kiambu Mall,82,14,17.07%,Kiambu
 05/25/2024,Bata Kiambu Mall,109,32,29.49%,Kiambu
 05/26/2024,Bata Kiambu Mall,122,24,19.67%,Kiambu
+05/27/2024,Bata Kiambu Mall,81,14,17.39%,Kiambu
+05/28/2024,Bata Kiambu Mall,68,10,14.71%,Kiambu
 01/02/2024,Bata Kitengela One,0,178,0.00%,Kitengela
 01/03/2024,Bata Kitengela One,0,186,0.00%,Kitengela
 01/04/2024,Bata Kitengela One,0,195,0.00%,Kitengela
@@ -2172,7 +2200,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Kitengela One,166,42,25.30%,Kitengela
 05/24/2024,Bata Kitengela One,173,41,23.77%,Kitengela
 05/25/2024,Bata Kitengela One,312,71,22.79%,Kitengela
-05/26/2024,Bata Kitengela One,238,55,23.16%,Kitengela
+05/26/2024,Bata Kitengela One,241,55,22.87%,Kitengela
+05/27/2024,Bata Kitengela One,173,41,23.77%,Kitengela
+05/28/2024,Bata Kitengela One,152,43,28.38%,Kitengela
 01/03/2024,Bata Likat,0,334,0.00%,Nairobi
 01/04/2024,Bata Likat,0,454,0.00%,Nairobi
 01/06/2024,Bata Likat,0,624,0.00%,Nairobi
@@ -2315,7 +2345,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Likat,256,78,30.47%,Nairobi
 05/24/2024,Bata Likat,244,82,33.61%,Nairobi
 05/25/2024,Bata Likat,249,99,39.84%,Nairobi
-05/26/2024,Bata Likat,66,14,21.21%,Nairobi
+05/26/2024,Bata Likat,205,50,24.45%,Nairobi
+05/27/2024,Bata Likat,237,84,35.44%,Nairobi
+05/28/2024,Bata Likat,36,8,22.22%,Nairobi
 01/01/2024,Bata Nairobi One,465,0,0.00%,Nairobi
 01/02/2024,Bata Nairobi One,630,108,17.14%,Nairobi
 01/03/2024,Bata Nairobi One,852,197,23.14%,Nairobi
@@ -2463,6 +2495,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Nairobi One,411,63,15.33%,Nairobi
 05/25/2024,Bata Nairobi One,334,54,16.19%,Nairobi
 05/26/2024,Bata Nairobi One,213,32,15.02%,Nairobi
+05/27/2024,Bata Nairobi One,384,62,16.15%,Nairobi
+05/28/2024,Bata Nairobi One,358,68,19.02%,Nairobi
 01/01/2024,Bata Ridgeways Mall,0,25,0.00%,Limuru
 01/02/2024,Bata Ridgeways Mall,0,55,0.00%,Limuru
 01/03/2024,Bata Ridgeways Mall,0,67,0.00%,Limuru
@@ -2608,7 +2642,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Ridgeways Mall,34,22,65.67%,Limuru
 05/24/2024,Bata Ridgeways Mall,59,23,39.32%,Limuru
 05/25/2024,Bata Ridgeways Mall,82,29,35.58%,Limuru
-05/26/2024,Bata Ridgeways Mall,4,1,25.00%,Limuru
+05/26/2024,Bata Ridgeways Mall,60,24,40.34%,Limuru
+05/27/2024,Bata Ridgeways Mall,56,0,0.00%,Limuru
+05/28/2024,Bata Ridgeways Mall,70,52,74.82%,Limuru
 01/02/2024,Bata Rongai Destination,0,144,0.00%,Ong'ata Rongai
 01/03/2024,Bata Rongai Destination,0,156,0.00%,Ong'ata Rongai
 01/04/2024,Bata Rongai Destination,0,175,0.00%,Ong'ata Rongai
@@ -2754,7 +2790,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Rongai Destination,75,30,40.27%,Ong'ata Rongai
 05/24/2024,Bata Rongai Destination,62,43,69.35%,Ong'ata Rongai
 05/25/2024,Bata Rongai Destination,118,35,29.79%,Ong'ata Rongai
-05/26/2024,Bata Rongai Destination,174,43,24.78%,Ong'ata Rongai
+05/26/2024,Bata Rongai Destination,177,43,24.36%,Ong'ata Rongai
+05/27/2024,Bata Rongai Destination,141,27,19.22%,Ong'ata Rongai
+05/28/2024,Bata Rongai Destination,128,50,39.22%,Ong'ata Rongai
 01/01/2024,Bata Sarit Centre,711,0,0.00%,Nairobi
 01/02/2024,Bata Sarit Centre,1125,206,18.31%,Nairobi
 01/03/2024,Bata Sarit Centre,1166,254,21.79%,Nairobi
@@ -2902,6 +2940,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Sarit Centre,608,116,19.08%,Nairobi
 05/25/2024,Bata Sarit Centre,743,128,17.23%,Nairobi
 05/26/2024,Bata Sarit Centre,872,154,17.66%,Nairobi
+05/27/2024,Bata Sarit Centre,513,97,18.93%,Nairobi
+05/28/2024,Bata Sarit Centre,515,98,19.03%,Nairobi
 01/02/2024,Bata Thika One,0,126,0.00%,Thika
 01/03/2024,Bata Thika One,0,182,0.00%,Thika
 01/04/2024,Bata Thika One,0,191,0.00%,Thika
@@ -3045,7 +3085,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Thika One,162,36,22.29%,Thika
 05/24/2024,Bata Thika One,154,48,31.17%,Thika
 05/25/2024,Bata Thika One,200,47,23.50%,Thika
-05/26/2024,Bata Thika One,114,20,17.62%,Thika
+05/26/2024,Bata Thika One,118,20,17.02%,Thika
+05/27/2024,Bata Thika One,75,13,17.33%,Thika
 01/01/2024,Bata Thika Road Mall,0,91,0.00%,Nairobi
 01/02/2024,Bata Thika Road Mall,0,180,0.00%,Nairobi
 01/03/2024,Bata Thika Road Mall,0,290,0.00%,Nairobi
@@ -3190,6 +3231,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Thika Road Mall,111,56,50.68%,Nairobi
 05/25/2024,Bata Thika Road Mall,193,96,49.87%,Nairobi
 05/26/2024,Bata Thika Road Mall,274,118,43.14%,Nairobi
+05/27/2024,Bata Thika Road Mall,114,56,49.12%,Nairobi
+05/28/2024,Bata Thika Road Mall,125,85,68.27%,Nairobi
 01/01/2024,Bata Tom Mboya Mega,425,110,25.91%,Nairobi
 01/02/2024,Bata Tom Mboya Mega,1440,483,33.55%,Nairobi
 01/03/2024,Bata Tom Mboya Mega,1621,530,32.70%,Nairobi
@@ -3337,6 +3380,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Tom Mboya Mega,527,133,25.24%,Nairobi
 05/25/2024,Bata Tom Mboya Mega,763,157,20.58%,Nairobi
 05/26/2024,Bata Tom Mboya Mega,270,43,15.93%,Nairobi
+05/27/2024,Bata Tom Mboya Mega,569,138,24.27%,Nairobi
+05/28/2024,Bata Tom Mboya Mega,451,127,28.19%,Nairobi
 01/01/2024,Bata Tropical Craft,114,0,0.00%,Nairobi
 01/02/2024,Bata Tropical Craft,738,0,0.00%,Nairobi
 01/03/2024,Bata Tropical Craft,911,248,27.24%,Nairobi
@@ -3483,7 +3528,9 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/23/2024,Bata Tropical Craft,207,40,19.32%,Nairobi
 05/24/2024,Bata Tropical Craft,242,47,19.46%,Nairobi
 05/25/2024,Bata Tropical Craft,219,46,21.05%,Nairobi
-05/26/2024,Bata Tropical Craft,112,14,12.56%,Nairobi
+05/26/2024,Bata Tropical Craft,113,14,12.39%,Nairobi
+05/27/2024,Bata Tropical Craft,184,36,19.57%,Nairobi
+05/28/2024,Bata Tropical Craft,206,33,16.06%,Nairobi
 01/02/2024,Bata Two Rivers,0,151,0.00%,Limuru
 01/03/2024,Bata Two Rivers,0,92,0.00%,Limuru
 01/04/2024,Bata Two Rivers,0,105,0.00%,Limuru
@@ -3628,6 +3675,8 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Two Rivers,243,48,19.79%,Limuru
 05/25/2024,Bata Two Rivers,336,49,14.61%,Limuru
 05/26/2024,Bata Two Rivers,577,86,14.92%,Limuru
+05/27/2024,Bata Two Rivers,191,28,14.70%,Limuru
+05/28/2024,Bata Two Rivers,187,36,19.30%,Limuru
 01/02/2024,Bata Westgate Mall,0,37,0.00%,Nairobi
 01/03/2024,Bata Westgate Mall,0,89,0.00%,Nairobi
 01/04/2024,Bata Westgate Mall,0,53,0.00%,Nairobi
@@ -3774,3 +3823,5 @@ Date,Store,Foot Count,Transactions,Conversion,City
 05/24/2024,Bata Westgate Mall,179,33,18.49%,Nairobi
 05/25/2024,Bata Westgate Mall,214,49,22.95%,Nairobi
 05/26/2024,Bata Westgate Mall,288,49,17.04%,Nairobi
+05/27/2024,Bata Westgate Mall,142,27,19.08%,Nairobi
+05/28/2024,Bata Westgate Mall,121,29,23.97%,Nairobi

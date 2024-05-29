@@ -24,9 +24,9 @@ def get_time_of_day():
     else:
         return "Evening"
 
-# Calculate the default date range (the most recent three days excluding today)
+# Calculate the default date range (the most recent seven days excluding today)
 max_date = sales_data['Date'].max()
-start_date = max_date - timedelta(days=2)
+start_date = max_date - timedelta(days=6)
 end_date = max_date
 
 # Define layout
@@ -80,7 +80,7 @@ def update_graph(selected_store, start_date, end_date, n_clicks):
 
     # Check if the reset button was clicked
     if ctx.triggered and ctx.triggered[0]['prop_id'].split('.')[0] == 'reset-date-range':
-        start_date = sales_data['Date'].max() - timedelta(days=2)
+        start_date = sales_data['Date'].max() - timedelta(days=6)
         end_date = sales_data['Date'].max()
 
     # Ensure start_date and end_date are datetime.date objects
