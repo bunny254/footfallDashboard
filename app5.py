@@ -99,7 +99,7 @@ def update_graph(start_date, end_date, n_clicks):
 
     # Check if the reset button was clicked
     if ctx.triggered and ctx.triggered[0]['prop_id'].split('.')[0] == 'reset-date-range':
-        start_date = max_date - timedelta(days=90)
+        start_date = max_date - timedelta(days=60)
         end_date = max_date
 
     # Ensure start_date and end_date are datetime.date objects
@@ -140,12 +140,51 @@ def update_graph(start_date, end_date, n_clicks):
         # Define a function to format the x-axis ticks
         def format_date(date):
             if date.weekday() >= 5 or date in public_holidays:
-                return f'<b>{date.strftime("%b-%d")}</b>'
-            return date.strftime("%b-%d")
+                return f'<b>{date.strftime("%d")}</b>'
+            return date.strftime("%d")
 
         # Format the x-axis tick labels
         tickvals = [d.strftime("%Y-%m-%d") for d in date_range]
         ticktext = [format_date(d) for d in date_range]
+
+        # Create annotations for the months
+        annotations = []
+        previous_month = None
+        month_start_idx = 0
+        for i, date in enumerate(date_range):
+            if date.strftime("%b") != previous_month:
+                if previous_month is not None:
+                    month_end_idx = i - 1
+                    mid_idx = (month_start_idx + month_end_idx) // 2
+                    annotations.append(
+                        dict(
+                            x=date_range[mid_idx].strftime("%Y-%m-%d"),
+                            y=-0.15,  # Adjusted position to be directly below the dates
+                            xref='x',
+                            yref='paper',
+                            text=previous_month,
+                            showarrow=False,
+                            font=dict(size=14)
+                        )
+                    )
+                month_start_idx = i
+                previous_month = date.strftime("%b")
+
+        # Add the last month annotation
+        if previous_month is not None:
+            month_end_idx = len(date_range) - 1
+            mid_idx = (month_start_idx + month_end_idx) // 2
+            annotations.append(
+                dict(
+                    x=date_range[mid_idx].strftime("%Y-%m-%d"),
+                    y=-0.15,
+                    xref='x',
+                    yref='paper',
+                    text=previous_month,
+                    showarrow=False,
+                    font=dict(size=14)
+                )
+            )
 
         layout = go.Layout(
             title=f'Foot Count for {store}',
@@ -156,6 +195,7 @@ def update_graph(start_date, end_date, n_clicks):
                 'tickmode': 'array',
                 'tickvals': tickvals,
                 'ticktext': ticktext,
+                'ticks': 'outside',
             },
             yaxis={'title': 'Foot Count', 'zeroline': False, 'rangemode': 'tozero', 'tickfont': dict(size=12)},
             plot_bgcolor='rgba(0,0,0,0)',
@@ -163,7 +203,8 @@ def update_graph(start_date, end_date, n_clicks):
             font=dict(family='Arial, sans-serif', size=14, color='rgb(50, 50, 50)'),
             width=1600,  # Adjusted width to fit better on the screen
             height=600,
-            margin=dict(l=40, r=40, b=120, t=80)
+            margin=dict(l=40, r=40, b=120, t=80),
+            annotations=annotations
         )
 
         graph = dcc.Graph(

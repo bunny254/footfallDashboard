@@ -1,16 +1,18 @@
 import dash
 from dash import dcc, html
-from datetime import datetime
+from datetime import datetime, timedelta
 import plotly.graph_objs as go
 import pandas as pd
 
 # Read data from CSV file
 sales_data = pd.read_csv('FootCounts_new.csv')
 
-
+# Convert 'Date' column to datetime and then to date only
+sales_data['Date'] = pd.to_datetime(sales_data['Date']).dt.date  # Convert to date only
 
 # Initialize Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 # Function to get the time of day
 def get_time_of_day():
@@ -22,63 +24,97 @@ def get_time_of_day():
     else:
         return "Evening"
 
-# Define layout
-app.layout = html.Div([
-    html.H1(children=f"Good {get_time_of_day()}, Welcome."),
+# Calculate the default date range (the most recent seven days excluding today)
+max_date = sales_data['Date'].max()
+start_date = max_date - timedelta(days=6)
+end_date = max_date
 
-    html.Div(children='''
-        Bata Store's Footfall Camera Reports Dashboard.
-    '''),
+# Define layout
+app.layout = html.Div(style={'fontFamily': 'Arial, sans-serif', 'margin': '40px'}, children=[
+    html.H1(children=f"Good {get_time_of_day()}, Welcome.", style={'textAlign': 'center'}),
     
-    dcc.Dropdown(
-        id='store-dropdown',
-        options=[
-            {'label': store, 'value': store} for store in sales_data['Store'].unique()
-        ],
-        value=sales_data['Store'].unique()[0]  # Default selected store
-    ),
-    dcc.Graph(id='sales-graph')
+    html.Div(children="Bata Store's Footfall Camera Reports Dashboard.", style={'textAlign': 'center', 'marginBottom': '20px'}),
+    
+    html.Div([
+        html.Label('Select Store:', style={'fontWeight': 'bold'}),
+        dcc.Dropdown(
+            id='store-dropdown',
+            options=[{'label': store, 'value': store} for store in sales_data['Store'].unique()],
+            value=sales_data['Store'].unique()[0],  # Default selected store
+            style={'width': '50%', 'marginBottom': '20px'}
+        ),
+    ], style={'textAlign': 'center'}),
+    
+    html.Div([
+        html.Label('Select Date Range:', style={'fontWeight': 'bold'}),
+        dcc.DatePickerRange(
+            id='date-picker-range',
+            start_date=start_date,
+            end_date=end_date,
+            display_format='YYYY-MM-DD',
+            style={'marginBottom': '20px'}
+        ),
+        html.Button('Reset Date Range', id='reset-date-range', n_clicks=0, style={'marginLeft': '10px'})
+    ], style={'textAlign': 'center'}),
+
+    dcc.Graph(id='sales-graph'),
+
+    html.Div([
+        "Built by ",
+        html.A("Simon Wachira", href="https://simonwachira.com", style={'font-style': 'italic', 'font-weight': '600'})
+    ], style={'marginTop': '40px'}) 
 ])
 
 # Define callback to update graph
 @app.callback(
-    dash.dependencies.Output('sales-graph', 'figure'),
-    [dash.dependencies.Input('store-dropdown', 'value')]
+    [dash.dependencies.Output('sales-graph', 'figure'),
+     dash.dependencies.Output('date-picker-range', 'start_date'),
+     dash.dependencies.Output('date-picker-range', 'end_date')],
+    [dash.dependencies.Input('store-dropdown', 'value'),
+     dash.dependencies.Input('date-picker-range', 'start_date'),
+     dash.dependencies.Input('date-picker-range', 'end_date'),
+     dash.dependencies.Input('reset-date-range', 'n_clicks')]
 )
-def update_graph(selected_store):
-    # Filter data based on selected store
-    filtered_data = sales_data[sales_data['Store'] == selected_store]
-    
+def update_graph(selected_store, start_date, end_date, n_clicks):
+    ctx = dash.callback_context
+
+    # Check if the reset button was clicked
+    if ctx.triggered and ctx.triggered[0]['prop_id'].split('.')[0] == 'reset-date-range':
+        start_date = sales_data['Date'].max() - timedelta(days=6)
+        end_date = sales_data['Date'].max()
+
+    # Ensure start_date and end_date are datetime.date objects
+    if isinstance(start_date, str):
+        start_date = datetime.strptime(start_date, '%Y-%m-%d').date()
+    if isinstance(end_date, str):
+        end_date = datetime.strptime(end_date, '%Y-%m-%d').date()
+
+    # Filter data based on selected store and date range
+    filtered_data = sales_data[
+        (sales_data['Store'] == selected_store) &
+        (sales_data['Date'] >= start_date) &
+        (sales_data['Date'] <= end_date)
+    ]
+
     # Prepare data for plotting
     trace = go.Scatter(
         x=filtered_data['Date'],
-        y=filtered_data['Foot Count'],  # Assuming you want to plot foot count
+        y=filtered_data['Foot Count'],
         mode='lines+markers',
         name='Foot Count',
-        line=dict(color='rgb(255, 127, 14)', width=2),  # Custom line style
-        marker=dict(symbol='diamond', size=4, color='rgb(31, 119, 180)', line=dict(width=1, color='rgb(31, 119, 180)'))  # Custom marker style
+        line=dict(color='rgb(255, 127, 14)', width=2),
+        marker=dict(symbol='diamond', size=6, color='rgb(31, 119, 180)', line=dict(width=1, color='rgb(31, 119, 180)'))
     )
+
     layout = go.Layout(
-        title='Weekly Foot Count for {}'.format(selected_store),
+        title='Foot Count for {}'.format(selected_store),
         xaxis={'title': 'Date', 'tickangle': -45, 'tickfont': dict(size=12)},
-        yaxis={'title': 'Foot Count', 'zeroline': False, 'rangemode': 'tozero','tickfont': dict(size=12)},
-        plot_bgcolor='rgba(0,0,0,0)',  # Set transparent plot background
-        paper_bgcolor='rgb(255, 255, 255)',  # Set paper background color
-        font=dict(family='Arial, sans-serif', size=14, color='rgb(50, 50, 50)'),  # Custom font style
+        yaxis={'title': 'Foot Count', 'zeroline': False, 'rangemode': 'tozero', 'tickfont': dict(size=12)},
+        plot_bgcolor='rgba(0,0,0,0)',
+        paper_bgcolor='rgb(255, 255, 255)',
+        font=dict(family='Arial, sans-serif', size=14, color='rgb(50, 50, 50)'),
     )
-    '''
-    layout = go.Layout(
-    title='Weekly Foot Count for {}'.format(selected_store),
-    xaxis={'title': 'Date', 'tickangle': -45, 'tickfont': dict(size=12)},  # Adjust angle and font size of x-axis ticks
-    yaxis={'title': 'Foot Count', 'zeroline': False, 'rangemode': 'tozero', 'tickfont': dict(size=12)},  # Adjust font size of y-axis ticks
-    plot_bgcolor='rgba(0,0,0,0)',  # Set transparent plot background
-    paper_bgcolor='rgb(255, 255, 255)',  # Set paper background color
-    font=dict(family='Arial, sans-serif', size=14, color='rgb(50, 50, 50)'),  # Custom font style
-    margin=dict(l=50, r=50, t=70, b=50),  # Adjust margins
-    legend=dict(font=dict(size=12), orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1)  # Adjust legend position and font size
-)
-'''
-    return {'data': [trace], 'layout': layout}
+    return {'data': [trace], 'layout': layout}, start_date, end_date
 
 # Run the app
 if __name__ == '__main__':
