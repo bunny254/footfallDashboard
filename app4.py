@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 import pandas as pd
 
 # Read data from CSV file
-sales_data = pd.read_csv('FootCounts_new.csv')
+sales_data = pd.read_csv('FootCounts_new.csv', skipfooter=1, engine='python')  # Skip the last row if it contains summary or footer information
 
 # Convert 'Date' column to datetime and then to date only
 sales_data['Date'] = pd.to_datetime(sales_data['Date']).dt.date  # Convert to date only
@@ -61,7 +61,7 @@ app.layout = html.Div(style={'fontFamily': 'Arial, sans-serif', 'margin': '40px'
 
     html.Div([
         "Built by ",
-        html.A("Simon Wachira", href="https://simonwachira.com", style={'font-style': 'italic', 'font-weight': '600'})
+        html.A("Simon Wachira", href="https://builtbysimon.top", style={'font-style': 'italic', 'font-weight': '600'})
     ], style={'marginTop': '40px'}) 
 ])
 
@@ -118,4 +118,4 @@ def update_graph(selected_store, start_date, end_date, n_clicks):
 
 # Run the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)
